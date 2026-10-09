@@ -86,12 +86,16 @@ Build small SQL portfolio projects
 
 Pass junior data analyst SQL screens and practical tests
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🌈   S Q L   F U N D A M E N T A L S   🌈
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-A modern, vibrant cheatsheet for learning,
-practising, and showcasing SQL skills.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+███████╗ ██████╗ ██╗     
+██╔════╝██╔═══██╗██║     
+█████╗  ██║   ██║██║     
+██╔══╝  ██║   ██║██║     
+███████╗╚██████╔╝███████╗
+╚══════╝ ╚═════╝ ╚══════╝
+
+   🌈 SQL FUNDAMENTALS CHEATSHEET 🌈
+ A colourful, modern, portfolio‑ready reference
+
 
 
 🌈 SQL Cheatsheet — Portfolio Edition
