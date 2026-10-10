@@ -1,0 +1,5 @@
+region_id,region_name,avg_distance_km,traffic_level
+1,North,12,Medium
+2,South,20,High
+3,East,8,Low
+4,West,18,High
