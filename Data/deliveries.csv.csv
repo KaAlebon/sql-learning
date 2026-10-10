@@ -1,0 +1,51 @@
+delivery_id,driver,region,delivery_time_minutes,distance_km,status,delivery_date,package_weight_kg,vehicle_type
+1001,Ashley,North,42,12,On Time,01/09/2026,3.2,Van
+1002,Jordan,South,58,18,Late,01/09/2026,5.1,Car
+1003,Riley,East,33,9,On Time,01/09/2026,2.4,Bike
+1004,Morgan,West,67,22,Late,01/09/2026,7.8,Van
+1005,Casey,North,49,14,On Time,02/09/2026,4,Car
+1006,Jamie,South,72,25,Late,02/09/2026,8.3,Van
+1007,Drew,East,29,7,On Time,02/09/2026,1.9,Bike
+1008,Alex,West,55,17,Late,02/09/2026,6.2,Car
+1009,Harper,North,38,11,On Time,03/09/2026,3,Van
+1010,Charlie,South,61,19,Late,03/09/2026,5.7,Car
+1011,Quinn,East,27,6,On Time,03/09/2026,1.5,Bike
+1012,Sam,West,70,24,Late,03/09/2026,9.1,Van
+1013,Blake,North,45,13,On Time,04/09/2026,3.8,Car
+1014,Robin,South,59,18,Late,04/09/2026,5.4,Van
+1015,Taylor,East,31,8,On Time,04/09/2026,2.1,Bike
+1016,Jess,West,66,21,Late,04/09/2026,7.5,Car
+1017,Shay,North,41,12,On Time,05/09/2026,3.3,Van
+1018,Kai,South,73,26,Late,05/09/2026,8.7,Van
+1019,Lee,East,34,10,On Time,05/09/2026,2.7,Bike
+1020,Devon,West,57,16,Late,05/09/2026,6,Car
+1021,Alexis,North,39,11,On Time,06/09/2026,3.1,Van
+1022,Reese,South,62,20,Late,06/09/2026,5.9,Car
+1023,Hayden,East,28,7,On Time,06/09/2026,1.8,Bike
+1024,Parker,West,69,23,Late,06/09/2026,8.9,Van
+1025,Jamie,North,47,14,On Time,07/09/2026,4.2,Car
+1026,Jordan,South,74,27,Late,07/09/2026,9,Van
+1027,Riley,East,32,9,On Time,07/09/2026,2.3,Bike
+1028,Morgan,West,60,18,Late,07/09/2026,6.5,Car
+1029,Casey,North,43,12,On Time,08/09/2026,3.4,Van
+1030,Ashley,South,68,22,Late,08/09/2026,7.6,Van
+1031,Drew,East,30,8,On Time,08/09/2026,2,Bike
+1032,Alex,West,56,17,Late,08/09/2026,6.3,Car
+1033,Harper,North,37,10,On Time,09/09/2026,2.9,Van
+1034,Charlie,South,63,20,Late,09/09/2026,6.1,Car
+1035,Quinn,East,26,6,On Time,09/09/2026,1.4,Bike
+1036,Sam,West,71,24,Late,09/09/2026,9.3,Van
+1037,Blake,North,44,13,On Time,10/09/2026,3.7,Car
+1038,Robin,South,58,18,Late,10/09/2026,5.5,Van
+1039,Taylor,East,35,10,On Time,10/09/2026,2.6,Bike
+1040,Jess,West,65,21,Late,10/09/2026,7.4,Car
+1041,Shay,North,40,11,On Time,11/09/2026,3.2,Van
+1042,Kai,South,75,28,Late,11/09/2026,9.2,Van
+1043,Lee,East,33,9,On Time,11/09/2026,2.5,Bike
+1044,Devon,West,58,17,Late,11/09/2026,6.4,Car
+1045,Alexis,North,46,14,On Time,12/09/2026,4.1,Car
+1046,Reese,South,64,20,Late,12/09/2026,6,Van
+1047,Hayden,East,29,7,On Time,12/09/2026,1.7,Bike
+1048,Parker,West,72,25,Late,12/09/2026,9.4,Van
+1049,Jamie,North,42,12,On Time,13/09/2026,3.5,Van
+1050,Jordan,South,67,22,Late,13/09/2026,7.9,Car

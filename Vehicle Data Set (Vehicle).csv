@@ -1,4 +1,0 @@
-vehicle_id,vehicle_type,max_load_kg,fuel_type
-1,Van,1200,Diesel
-2,Car,300,Petrol
-3,Bike,30,None
