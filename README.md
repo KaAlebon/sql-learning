@@ -88,100 +88,158 @@ Pass junior data analyst SQL screens and practical tests
 
 __________________________________________________________
    🌈 SQL FUNDAMENTALS CHEATSHEET 🌈
- A colourful, modern, portfolio‑ready reference
 __________________________________________________________
 
 
-🌈 SQL Cheatsheet — Portfolio Edition
+🌈 SQL Cheatsheet
+A clean, colourful, modern reference for SQL fundamentals.
 
-📘 SELECT — Your First Move
-SELECT column_name
-FROM table_name;
+📘 Overview
+This cheatsheet provides a concise, professional summary of essential SQL concepts, including filtering, sorting, joining, grouping, and common interview patterns. It is designed to support portfolio projects, technical documentation, and interview preparation.
 
+🎓 Skills Demonstrated
+Writing clean, readable SQL queries
 
-🔍 Filtering Rows (WHERE)
+Filtering and sorting data
+
+Joining relational tables
+
+Aggregating and summarising data
+
+Using conditional logic
+
+Understanding interview‑ready SQL patterns
+
+Documenting technical knowledge professionally
+
+Creating portfolio‑ready developer documentation
+
+🌈 SQL Cheatsheet
+🌈 SELECT — Your First Move
+SELECT column1, column2
+FROM table;
+
+SELECT * — select all columns
+
+SELECT DISTINCT column — remove duplicates
+
+💛 WHERE — Filter What Matters
 SELECT *
 FROM employees
-WHERE role = 'Manager';
+WHERE role = 'Engineer';
 
-🎛 Sorting (ORDER BY)
-SELECT name, salary
-FROM employees
-ORDER BY salary DESC;
+Operators: =, !=, >, <, LIKE, IN, BETWEEN
 
-📊 Aggregations (COUNT, SUM, AVG, MIN, MAX)
-SELECT COUNT(*) AS total_employees
-FROM employees;
+💙 ORDER BY — Sort Your Results
+SELECT *
+FROM deliveries
+ORDER BY delivery_time DESC;
 
-SELECT AVG(salary) AS avg_salary
-FROM employees;
+💜 LIMIT — Keep It Focused
+SELECT *
+FROM customers
+LIMIT 10;
 
-🧮 GROUP BY — Summaries
+💚 JOIN — Connect Your Data
+SELECT e.name, d.region
+FROM employees e
+INNER JOIN deliveries d
+  ON e.id = d.employee_id;
+
+LEFT JOIN
+SELECT e.name, d.delivery_time
+FROM employees e
+LEFT JOIN deliveries d
+  ON e.id = d.employee_id;
+
+🧡 GROUP BY — Summarise Your Data
 SELECT role, COUNT(*) AS total_employed
 FROM employees
 GROUP BY role;
 
-🎯 HAVING — Filters After Grouping
-SELECT role, COUNT(*) AS total_employed
+Aggregations: COUNT, SUM, AVG, MIN, MAX
+
+💗 HAVING — Filter Groups
+SELECT role, COUNT(*) AS total
 FROM employees
 GROUP BY role
-HAVING COUNT(*) > 10;
+HAVING COUNT(*) > 5;
 
-HAVING COUNT(*) > 10;
-
-🔗 JOINs — Combining Tables
-
-INNER JOIN
-SELECT e.name, d.department_name
-FROM employees e
-INNER JOIN departments d
-ON e.department_id = d.id;
-
-LEFT JOIN
-SELECT e.name, d.department_name
-FROM employees e
-LEFT JOIN departments d
-ON e.department_id = d.id;
-
-🧩 CASE — Conditional Logic
-SELECT name,
-       CASE
-           WHEN salary > 50000 THEN 'High'
-           ELSE 'Standard'
-       END AS salary_band
-FROM employees;
-
-🧼 Cleaning Data
-SELECT TRIM(name) AS clean_name,
-       COALESCE(department, 'Unknown') AS department
-FROM employees;
-
-🗂 Useful Patterns for Interviews
-Count late deliveries
-SELECT COUNT(*) AS late_deliveries
-FROM deliveries
-WHERE delivery_status = 'Late';
-
-Average delivery time
-SELECT AVG(delivery_time_minutes) AS avg_delivery_time
+💙 CASE — Conditional Output
+SELECT
+  delivery_id,
+  CASE
+    WHEN delivery_time > 5 THEN 'Late'
+    ELSE 'On Time'
+  END AS status
 FROM deliveries;
 
-Performance by region
-SELECT region, AVG(delivery_time_minutes) AS avg_time
-FROM deliveries
-GROUP BY region;
+💛 Aliases — Make It Readable
+SELECT name AS employee_name
+FROM employees e;
+
+📊 Quick Reference Table
+Concept	Keyword	Example
+Select	SELECT	SELECT name FROM employees;
+Filter	WHERE	WHERE role='Engineer'
+Sort	ORDER BY	ORDER BY age DESC
+Limit	LIMIT	LIMIT 5
+Join	JOIN	INNER JOIN deliveries d ON …
+Group	GROUP BY	GROUP BY role
+Filter groups	HAVING	HAVING COUNT(*) > 5
+Logic	CASE	CASE WHEN … THEN … END
 
 
-🧱 Notes Section (Optional)
-Use this space to add your own examples, mistakes, wins, and queries as you learn.
-Great places to track progress include:
+⚠️ Common Mistakes
+Using WHERE instead of HAVING
 
-Queries you struggled with but eventually solved
+Forgetting GROUP BY
 
-Real‑world examples from your transport/data work
+Using = instead of LIKE
 
-Patterns you want to remember
+Joining tables without an ON condition
 
-Mini‑projects or datasets you plan to explore
+Using SELECT * in production
 
-Interview questions you’ve practised
+🎯 SQL Interview Prep
+Common Questions
+Find duplicates
+
+Top N queries
+
+Percentage calculations
+
+JOIN differences
+
+Aggregation logic
+
+Patterns to Know
+
+Find duplicates
+SELECT email, COUNT(*)
+FROM customers
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+Top N
+
+SELECT *
+FROM orders
+ORDER BY total DESC
+LIMIT 5;
+
+Percentage
+
+SELECT
+  COUNT(*) * 100.0 / (SELECT COUNT(*) FROM orders) AS pct
+FROM orders
+WHERE status = 'Late';
+
+Tips
+Explain your reasoning
+
+Build queries step‑by‑step
+
+Use aliases for clarity
+
+Ask clarifying questions
