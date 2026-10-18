@@ -2,18 +2,18 @@
 (Ready to paste into your repo as sql_cheat_sheet.md)
 
 🔹 1. Basic SELECT
-sql
 SELECT column1, column2
 FROM table_name;
+
 Useful patterns
-sql
 SELECT * FROM table_name;          -- all columns
 SELECT DISTINCT column FROM table; -- unique values
+
 🔹 2. Filtering with WHERE
-sql
 SELECT *
 FROM table
 WHERE column = 'value';
+
 Operators
 = equal
 
@@ -32,7 +32,6 @@ LIKE 'text%' (starts with)
 LIKE '%text' (ends with)
 
 🔹 3. Sorting with ORDER BY
-sql
 SELECT *
 FROM table
 ORDER BY column ASC;
@@ -40,45 +39,43 @@ ORDER BY column ASC;
 SELECT *
 FROM table
 ORDER BY column DESC;
+
 🔹 4. LIMIT / TOP
 SQLite:
-
-sql
 SELECT *
 FROM table
 LIMIT 10;
-SQL Server:
 
-sql
+SQL Server:
 SELECT TOP 10 *
 FROM table;
+
 🔹 5. JOINs
 INNER JOIN
-sql
 SELECT a.column, b.column
 FROM tableA a
 JOIN tableB b
   ON a.id = b.id;
+
 LEFT JOIN
-sql
 SELECT *
 FROM tableA a
 LEFT JOIN tableB b
   ON a.id = b.id;
+
 RIGHT JOIN (not in SQLite)
-sql
 SELECT *
 FROM tableA a
 RIGHT JOIN tableB b
   ON a.id = b.id;
+
 FULL OUTER JOIN (not in SQLite)
-sql
 SELECT *
 FROM tableA a
 FULL OUTER JOIN tableB b
   ON a.id = b.id;
+
 🔹 6. Aggregations
-sql
 SELECT
   COUNT(*) AS total_rows,
   SUM(column) AS total_value,
@@ -86,19 +83,19 @@ SELECT
   MIN(column) AS smallest,
   MAX(column) AS largest
 FROM table;
+
 🔹 7. GROUP BY
-sql
 SELECT column, COUNT(*)
 FROM table
 GROUP BY column;
+
 GROUP BY + HAVING
-sql
 SELECT driver_id, COUNT(*) AS deliveries
 FROM deliveries
 GROUP BY driver_id
 HAVING COUNT(*) > 10;
+
 🔹 8. CASE Statements
-sql
 SELECT
   delivery_id,
   CASE
@@ -106,9 +103,8 @@ SELECT
     ELSE 'On Time'
   END AS delivery_status
 FROM deliveries;
+
 🔹 9. Subqueries
-Inline subquery
-sql
 SELECT *
 FROM deliveries
 WHERE driver_id IN (
@@ -116,14 +112,15 @@ WHERE driver_id IN (
     FROM drivers
     WHERE experience_years > 5
 );
+
 Subquery in SELECT
-sql
 SELECT
   driver_id,
   (SELECT AVG(rating)
    FROM reviews
    WHERE reviews.driver_id = drivers.id) AS avg_rating
 FROM drivers;
+
 🔹 10. Common Functions
 Text
 UPPER(column)
@@ -136,16 +133,14 @@ SUBSTR(column, start, length)
 
 Date
 SQLite uses strftime:
-
-sql
 SELECT strftime('%Y', delivery_date) AS year
 FROM deliveries;
+
 🔹 11. NULL Handling
-sql
 SELECT COALESCE(column, 'Unknown')
 FROM table;
+
 🔹 12. Best Practice Query Structure
-sql
 SELECT
     column1,
     column2,
