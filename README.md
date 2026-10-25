@@ -1,47 +1,35 @@
 🌈 SQL Learning & Practice Hub
-A structured SQL learning portfolio documenting my progress from SQL fundamentals to real-world data analysis projects.
+A portfolio documenting my journey from SQL fundamentals to real-world data analysis projects.
 
-💻 Project Description
-This repository serves as a central hub for developing SQL skills through practical analysis, portfolio projects, and documented findings.
-
-The goal of this repository is to:
-
-Build strong SQL fundamentals
-Analyse real-world datasets using SQL
-Develop portfolio-ready projects
-Document findings and analytical thinking
-Create evidence of practical data analysis skills
-
-✅ Current Progress
-Completed
-Kaggle SQL Certificate
-SQL fundamentals
-Filtering and sorting
-Aggregations and grouping
-Common Table Expressions (CTEs)
-Joins
-Basic analytical workflows
 Current Project
-Delivery Performance Analysis
+📦 Delivery Performance Analysis
 
-Investigating operational delivery data using SQLite and SQL to identify trends in:
+Using SQL and SQLite to investigate:
 
 Delivery volumes
-Driver performance
-Regional performance
-Delivery timing
+Delivery performance
+Driver activity
+Regional trends
 Operational efficiency
-📂 Repository Structure
-Data/ → datasets
+Repository Structure
+sql-learning/
+│
+├── Data
+├── Docs
+├── SQL
+└── README.md
+Skills Demonstrated
+SQL
+SQLite
+Data Analysis
+Business Question Development
+Documentation of Findings
+Current Progress
+✅ Kaggle SQL Certificate completed
 
-SQL/ → SQL queries and scripts
+✅ First SQL portfolio project underway
 
-Docs/ → findings and project documentation
-
-README.md → project overview
-
-🎯 Long-Term Goal
-Build a portfolio demonstrating job-ready SQL and analytical skills to support a transition into Data Analyst, Operations Analyst, or Supply Chain Analyst roles.
+✅ SQLite database created and analysed
 
 __________________________________________________________
    🌈 SQL FUNDAMENTALS CHEATSHEET 🌈
