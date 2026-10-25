@@ -1,90 +1,47 @@
-# 🌈 SQL Learning & Practice Hub  
-### *A clean, colourful, modern space for mastering SQL fundamentals and building portfolio‑ready skills.*
+🌈 SQL Learning & Practice Hub
+A structured SQL learning portfolio documenting my progress from SQL fundamentals to real-world data analysis projects.
 
-## 📘 Project Description
+💻 Project Description
+This repository serves as a central hub for developing SQL skills through practical analysis, portfolio projects, and documented findings.
 
-This repository is a structured, beginner‑friendly hub for learning and practising SQL.  
-It contains clear explanations, practical examples, interview‑style patterns, and a growing collection of real SQL exercises designed to build confidence and job‑ready skills.
+The goal of this repository is to:
 
-The goal of this project is to provide a clean, organised space where I can:
+Build strong SQL fundamentals
+Analyse real-world datasets using SQL
+Develop portfolio-ready projects
+Document findings and analytical thinking
+Create evidence of practical data analysis skills
 
-- Learn SQL fundamentals step‑by‑step  
-- Practise real queries using realistic datasets  
-- Build a portfolio of SQL mini‑projects  
-- Track progress and document learning  
-- Prepare for data analyst interviews and technical screens  
+✅ Current Progress
+Completed
+Kaggle SQL Certificate
+SQL fundamentals
+Filtering and sorting
+Aggregations and grouping
+Common Table Expressions (CTEs)
+Joins
+Basic analytical workflows
+Current Project
+Delivery Performance Analysis
 
-This repo evolves as I learn — new notes, examples, and practice tasks are added regularly.
+Investigating operational delivery data using SQLite and SQL to identify trends in:
 
+Delivery volumes
+Driver performance
+Regional performance
+Delivery timing
+Operational efficiency
+📂 Repository Structure
+Data/ → datasets
 
-## 📑 Table of Contents
+SQL/ → SQL queries and scripts
 
-1. 🎯 Why SQL Matters  
-2. 🧭 Recommended Learning Path  
-3. 🚀 SQL Goals (Weeks 1–4)  
-4. 🌈 SQL Cheatsheet  
-   - SELECT  
-   - WHERE  
-   - ORDER BY  
-   - Aggregations  
-   - GROUP BY  
-   - HAVING  
-   - JOINs  
-   - CASE  
-   - Data Cleaning  
-5. 🗂 Useful Patterns for Interviews  
-6. 🧱 Notes Section (Optional)
+Docs/ → findings and project documentation
 
+README.md → project overview
 
-🌟 SQL Learning Overview — Section 1
-
-🎯 Why SQL Matters
-SQL is the backbone of data analysis. It’s used in almost every analytics role — especially remote roles — to query databases, clean data, join tables, and build reports.
-
-Your goal:
-Become job‑ready in SQL fast enough to pass technical screens and build portfolio projects.
-
-🧭 Your Recommended Learning Path
-Based on your learning style (step‑by‑step, structured, hands‑on), these are your strongest free resources:
-
-1. SQLBolt — Fast Foundation
-Short, interactive lessons.
-Perfect for quickly learning:
-
-SELECT
-
-WHERE
-
-ORDER BY
-
-JOINs
-
-GROUP BY
-
-Aggregations
-
-2. Kaggle Learn — Real‑World Practice
-Notebook‑style learning with real datasets.
-Great for building confidence and practical skill.
-
-3. freeCodeCamp — Deep Skill Building
-Full PostgreSQL training with real projects.
-Best free full‑length SQL course available.
-
-🚀 SQL Goals (Weeks 1–4)
-By the end of Week 4, you will be able to:
-
-Write SELECT queries confidently
-
-Join multiple tables using INNER, LEFT, and RIGHT JOIN
-
-Filter and aggregate data with WHERE, GROUP BY, HAVING
-
-Clean messy datasets using TRIM, COALESCE, and basic string functions
-
-Build small SQL portfolio projects
-
-Pass junior data analyst SQL screens and practical tests
+🎯 Long-Term Goal
+Build a portfolio demonstrating job-ready SQL and analytical skills to support a transition into Data Analyst, Operations Analyst, or Supply Chain Analyst roles.
 
 __________________________________________________________
    🌈 SQL FUNDAMENTALS CHEATSHEET 🌈
